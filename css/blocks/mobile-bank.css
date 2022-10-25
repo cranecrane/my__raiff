@@ -1,0 +1,148 @@
+.mobile-bank {
+    padding-top: 53px;
+    padding-bottom: 30px;
+
+    color: var(--text-color-inverse);
+    text-align: center;
+    background-color: var(--mako);
+}
+
+@media (min-width: 768px) {
+    .mobile-bank {
+        padding-top: 79px;
+        padding-bottom: 80px;
+    }
+}
+
+.mobile-bank__container {
+    max-width: 1096px;
+}
+
+.mobile-bank__title {
+    margin-bottom: 15px;
+}
+
+.mobile-bank__descr {
+    margin-bottom: 32px;
+    color: var(--text-color-inverse);
+}
+
+@media (min-width: 768px) {
+    .mobile-bank__title {
+        margin-bottom: 17px;
+    }
+    
+    .mobile-bank__descr {
+        margin-bottom: 64px;
+    }
+}
+
+.mobile-bank__slider {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.mobile-bank__slide {
+    box-sizing: border-box;
+
+    border-radius: 14px;
+    padding-top: 54px;
+    padding-left: 21.54px;
+    padding-right: 21.54px;
+    max-width: 210px;
+    height: 340px;
+
+    background-color: var(--shark);
+}
+
+@media (min-width: 1240px) {
+    .mobile-bank__slide {
+        padding-top: 60px;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        max-width: 234px;
+        height: 380px;
+    }
+}
+
+.mobile-bank__slide-img {
+    object-fit: cover;
+    object-position: top;
+}
+
+.mobile-bank__pagination {
+    --swiper-pagination-color: var(--accent-color-main);
+    --swiper-pagination-bullet-inactive-color: transparent;
+
+    position: static;
+    margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+    border: 1px solid var(--text-color-secondary);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    border: none;
+}
+
+.mobile-bank__btn-prev,
+.mobile-bank__btn-next {
+    display: none;
+}
+
+@media (min-width: 1240px) {
+    .mobile-bank__pagination {
+        display: none;
+    }
+
+    .mobile-bank__btn-prev,
+    .mobile-bank__btn-next {
+        --btn-size: 42px;
+        --btn-offset: 60px;
+
+        z-index: 50;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 14px;
+        width: var(--btn-size);
+        height: var(--btn-size);
+
+        background-color: var(--accent-color-main);
+        transition: background-color .3s ease-in-out;
+    }
+
+    .mobile-bank__btn-next {
+        right: calc(-1 * var(--btn-offset));
+    }
+
+    .mobile-bank__btn-prev {
+        left: calc(-1 * var(--btn-offset));
+    }
+
+    .mobile-bank__btn-prev::after,
+    .mobile-bank__btn-next::after {
+        display: none;
+    }
+
+    .mobile-bank__btn-prev:hover,
+    .mobile-bank__btn-next:active {
+        background-color: var(--accent-color-hover);
+        transition: background-color .3s ease-in-out;
+    }
+}
+
+.mobile-bank__order-btn {
+    display: none;
+}
+
+@media (min-width: 1240px) {
+    .mobile-bank__order-btn {
+        display: inline;
+    }
+}

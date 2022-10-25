@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 16px;
+    height: var(--header-height);
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 22px;
+    }
+}
+
+.header__logos {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-link {
+    height: var(--logo-height);
+}
+
+@media (min-width: 768px) {
+    .header__logo-link {
+        height: var(--logo-height-tablet);
+    }
+}
+
+.header__logo-link--raiff {
+    --logo-height: 28px;
+    --logo-height-tablet: 36px;
+}
+
+.header__logo-link--visa {
+    --logo-height: 24px;
+    --logo-height-tablet: 28px;
+}
+
+.header__logo-link:not(:last-child) {
+    position: relative;
+
+    padding-right: 29px;
+    margin-right: 25px;
+}
+
+.header__logo-link:not(:last-child)::after {
+    content: '';
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    display: inline-block;
+    width: 1px;
+    background-color: var(--iron);
+}
+
+.header__tel-link {
+    display: block;
+
+    font-size: 0;
+    transition: color .3s ease-in-out;
+}
+
+.header__tel-link:hover,
+.header__tel-link:active {
+    color: var(--accent-color-hover);
+    transition: color .3s ease-in-out;
+}
+
+.header__tel-text {
+    display: none;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .header__tel-text {
+        display: block;
+    }
+}
+
+.header__tel-icon {
+    --size: 24px;
+
+    width: var(--size);
+    height: var(--size);
+}
+
+@media (min-width: 768px) {
+    .header__tel-icon {
+        display: none;
+    }
+}
+
+.header__tel-label {
+    display: none;
+    
+    line-height: 1;
+    text-align: right;
+    color: var(--text-color-secondary);
+}
+
+@media (min-width: 768px) {
+    .header__tel-label {
+        display: block;
+
+        font-size: 13px;
+    }
+}

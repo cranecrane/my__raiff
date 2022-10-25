@@ -1,0 +1,33 @@
+:root {
+    /*** colors ***/
+    --abbey: #55575c;
+    --dodger-blue: #3b7cff;
+    --gold: #fed500;
+    --gray-chateau:#a2a4a6;
+    --iron: #e1e1e3;
+    --jumbo: #808185;
+    --mako: #424548;
+    --pickled-bluewood: #26364b;
+    --shark: #2b2d33;
+    --turbo: #fee600;
+    --white: #fff;
+    --wild-sand: #f4f4f4;
+
+	--accent-color-main: var(--turbo);
+	--accent-color-hover: var(--gold);
+
+	--text-color-main: var(--shark);
+    --text-color-inverse: var(--white);
+    --text-color-secondary: var(--jumbo);
+
+    /*** border ***/
+    --border-radius: 10px;
+
+    /*** sizes ***/
+    --max-width-container: 1240px;
+    --padding-lr-container-tablet: 50px;
+    --padding-lr-container: 16px;
+
+    --header-height: 64px;
+    --order-btn-height: 54px;
+}

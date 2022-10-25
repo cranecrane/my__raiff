@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('../../fonts/ALS_Hauss_Regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'ALS Hauss';
+    font-style: normal;
+      font-display: swap;
+    font-weight: 500;
+    src: url('../../fonts/ALS_Hauss_Medium.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'Navigo';
+    font-style: normal;
+      font-display: swap;
+    font-weight: 400;
+    src: url('../../fonts/Navigo-Regular-Web.woff2') format('woff2'),
+         url('../../fonts/Navigo-Regular-Web.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Navigo';
+    font-style: normal;
+      font-display: swap;
+    font-weight: 700;
+    src: url('../../fonts/Navigo-Bold-Web.woff2') format('woff2'),
+         url('../../fonts/Navigo-Bold-Web.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Navigo';
+    font-style: normal;
+      font-display: swap;
+    font-weight: 900;
+    src: url('../../fonts/Navigo-Black-Web.woff2') format('woff2'),
+         url('../../fonts/Navigo-BLack-Web.woff') format('woff');
+  }

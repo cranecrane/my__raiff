@@ -1,0 +1,87 @@
+.hero {
+    padding-top: 24px;
+    min-height: calc(100vh - var(--header-height) - var(--order-btn-height));
+    
+    color: var(--text-color-inverse);
+
+    background-image: url(../../img/Promo.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding-top: 80px;
+        min-height: 550px;
+
+        background-position: center;
+        background-image: url(../../img/Promo_desk_1920x550.jpg);
+    }
+}
+
+.hero__label {
+    margin-bottom: 18px;
+}
+
+.hero__title {
+    max-width: 307px;
+
+    font-family: 'Navigo';
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    letter-spacing: -.2px;
+}
+
+.hero__title--num {
+    font-size: 1.78em;
+    font-weight: 900;
+}
+
+.hero__title--procent {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    .hero__title {
+        margin-bottom: 28px;
+        max-width: 516px;
+
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+.hero__title-rate {
+    margin-top: 20px;
+}
+
+.hero__order-btn {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    border-radius: 0;
+    transition-property: visibility, background-color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.hero__order-btn.hidden {
+    visibility: hidden;
+    bottom: -101%;
+    transition-property: visibility;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .hero__order-btn {
+        position: static;
+        border-radius: var(--border-radius);
+    }
+}

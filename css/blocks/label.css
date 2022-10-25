@@ -1,0 +1,29 @@
+.label {
+    --label-height: 34px;
+    --label-color: var(--dodger-blue);
+    --arrow-offset: -8px;
+
+    display: inline-block;
+    position: relative;
+
+    border-radius: 6px;
+    padding: 9px 12px;
+    max-width: 80%;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--text-color-inverse);
+
+    background-color: var(--label-color);
+}
+
+.label__arrow {
+    position: absolute;
+    right: var(--arrow-offset);
+    top: 0;
+    bottom: 0;
+
+    height: 100%;
+    color: var(--dodger-blue);
+}

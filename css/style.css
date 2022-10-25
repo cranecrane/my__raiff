@@ -1,0 +1,20 @@
+@import "base/normalize.css";
+@import "base/fonts.css";
+@import "base/variables.css";
+@import "base/global.css";
+@import "base/overall.css";
+
+/*** blocks ***/
+@import "blocks/btn.css";
+@import "blocks/label.css";
+@import "blocks/range.css";
+@import "blocks/scrollbar.css";
+
+@import "blocks/header.css";
+@import "blocks/hero.css";
+@import "blocks/benefits.css";
+@import "blocks/conditions.css";
+@import "blocks/calculate.css";
+@import "blocks/request.css";
+@import "blocks/mobile-bank.css";
+@import "blocks/footer.css";

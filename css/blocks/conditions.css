@@ -1,0 +1,88 @@
+.conditions {
+    --cards-gutter: 14px;
+    --cards-gutter-tablet: 24px;
+
+    padding-top: 48px;
+    padding-bottom: 26px;
+}
+
+@media (min-width: 768px) {
+    .conditions {
+        padding-top: 79px;
+        padding-bottom: 90px;
+    }
+}
+
+.conditions__title {
+    margin-bottom: 39px;
+}
+
+.conditions__list {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--text-color-inverse);
+}
+
+@media (min-width: 768px) {
+    .conditions__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.conditions__item {
+    border-radius: 14px;
+    padding: 42px 30px;
+
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+
+    background-repeat: no-repeat;
+    background-color: var(--pickled-bluewood);
+}
+
+.conditions__item:not(:last-child) {
+    margin-bottom: var(--cards-gutter);
+}
+
+.conditions__item--cash {
+    background-image: url(../../img/cash.png);
+    background-size: 120px;
+    background-position: 92% center;
+}
+
+.conditions__item--bag {
+    background-image: url(../../img/bag.png);
+    background-size: 105px;
+    background-position: 90% top;
+}
+
+.conditions__item--car {
+    background-image: url(../../img/car.png);
+    background-size: 120px;
+    background-position: 92% center;
+}
+
+@media (min-width: 768px) {
+    .conditions__item {
+        width: calc((100% - var(--cards-gutter-tablet) * 2) / 3);
+    }
+    .conditions__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .conditions__item:not(:nth-child(3n)) {
+        margin-right: var(--cards-gutter-tablet);
+    }
+
+    .conditions__item:not(:nth-last-child(-n+3)) {
+        margin-bottom: var(--cards-gutter-tablet);
+    }
+}
+
+.conditions__text {
+    max-width: 170px;
+}
